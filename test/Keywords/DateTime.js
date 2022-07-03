@@ -75,37 +75,29 @@ function DateTime(){
   
 }
 
-this.getCurrentDateTime = function(timeZone, format){
-    return moment().tz(timeZone).format(format);
-}
+    this.getCurrentDateTime = function(timeZone, format){
+        return moment().tz(timeZone).format(format);
+    }
 
-this.getFutureDate = function(noOfDays, timeZone, format){
+    this.getFutureDate = function(noOfDays, timeZone, format){
+        let forwardDays = new moment().tz(timeZone).add(noOfDays,'day')
+        return forwardDays.format(format);
+    }
 
-    let forwardDays = new moment().tz(timeZone).add(noOfDays,'day')
-    return forwardDays.format(format);
-}
+    this.getPreviousDate = function(noOfDays, timeZone, format){
+        let backwardDays = new moment().tz(timeZone).subtract(noOfDays,'day')
+        return backwardDays.format(format);
+    }
 
-this.getPreviousDate = function(noOfDays, timeZone, format){
+    this.getPreviousTime = function(hrs, mins, timeZone, format){
+        let backwardTime = new moment().tz(timeZone).subtract(hrs,'h').subtract(mins,'m');
+        return backwardTime.format(format);
+    }
 
-    let backwardDays = new moment().tz(timeZone).subtract(noOfDays,'day')
-    return backwardDays.format(format);
-}
-
-this.getPreviousTime = function(hrs, mins, timeZone, format){
-
-    let backwardTime = new moment().tz(timeZone).subtract(hrs,'h').subtract(mins,'m');
-    return backwardTime.format(format);
-}
-
-this.getFutureTime = function(hrs, mins, timeZone, format){
-
-    let forwardTime = new moment().tz(timeZone).add(hrs,'h').add(mins,'m');
-    return forwardTime.format(format);
-}
-
-    
-
-
+    this.getFutureTime = function(hrs, mins, timeZone, format){
+        let forwardTime = new moment().tz(timeZone).add(hrs,'h').add(mins,'m');
+        return forwardTime.format(format);
+    }
 
 }
 
