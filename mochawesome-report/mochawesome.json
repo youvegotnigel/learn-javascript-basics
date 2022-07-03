@@ -1,0 +1,290 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 6,
+    "passes": 2,
+    "pending": 4,
+    "failures": 0,
+    "start": "2020-07-11T20:40:51.670Z",
+    "end": "2020-07-11T20:40:51.699Z",
+    "duration": 29,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 66.66666666666666,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4e57f19e-1fb5-44de-b80d-1e37fcf450f0",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [
+        {
+          "title": "\"before all\" hook",
+          "fullTitle": "\"before all\" hook",
+          "timedOut": false,
+          "duration": 4,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "log('Before Hook')",
+          "err": {},
+          "uuid": "6a302ac0-0ec7-4fd2-b171-99aef9dc3451",
+          "parentUUID": "4e57f19e-1fb5-44de-b80d-1e37fcf450f0",
+          "isHook": true,
+          "skipped": false
+        },
+        {
+          "title": "\"before each\" hook",
+          "fullTitle": "\"before each\" hook",
+          "timedOut": false,
+          "duration": 1,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "log('Before Each hook')",
+          "err": {},
+          "uuid": "e7333bd0-8a36-40bb-b526-391651183fea",
+          "parentUUID": "4e57f19e-1fb5-44de-b80d-1e37fcf450f0",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "afterHooks": [
+        {
+          "title": "\"after all\" hook",
+          "fullTitle": "\"after all\" hook",
+          "timedOut": false,
+          "duration": 1,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "log('After Hook')",
+          "err": {},
+          "uuid": "5f65bb45-8c25-408e-8e6e-641e8768c4b2",
+          "parentUUID": "4e57f19e-1fb5-44de-b80d-1e37fcf450f0",
+          "isHook": true,
+          "skipped": false
+        },
+        {
+          "title": "\"after each\" hook",
+          "fullTitle": "\"after each\" hook",
+          "timedOut": false,
+          "duration": 1,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "log('After Each hook')",
+          "err": {},
+          "uuid": "75a249e9-70f5-4e39-8b5e-14c6846b8465",
+          "parentUUID": "4e57f19e-1fb5-44de-b80d-1e37fcf450f0",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aa102309-746d-4e5c-bcfc-92d6d87b9abf",
+          "title": "Mocha validations",
+          "fullFile": "C:\\Users\\way2automation\\Desktop\\mochaframework\\test\\testcase01.js",
+          "file": "\\test\\testcase01.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate through should",
+              "fullTitle": "Mocha validations Validate through should",
+              "timedOut": false,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "d6b60e0b-1d65-4e15-b919-beac0641ee41",
+              "parentUUID": "aa102309-746d-4e5c-bcfc-92d6d87b9abf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate through expect",
+              "fullTitle": "Mocha validations Validate through expect",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(name).to.equal('Rahul')\n       expect(name).to.have.lengthOf(5)\n       expect(isElementPresent()).to.true",
+              "err": {},
+              "uuid": "1f7294a9-2fb1-4102-b4e4-15fff63db856",
+              "parentUUID": "aa102309-746d-4e5c-bcfc-92d6d87b9abf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate through assert",
+              "fullTitle": "Mocha validations Validate through assert",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.equal(name,'Rahul')\n       assert.lengthOf(name,5)\n       assert.equal(isElementPresent(),true)",
+              "err": {},
+              "uuid": "d5a3d556-64f1-4a4f-a51e-541b8c1c9fe4",
+              "parentUUID": "aa102309-746d-4e5c-bcfc-92d6d87b9abf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1f7294a9-2fb1-4102-b4e4-15fff63db856",
+            "d5a3d556-64f1-4a4f-a51e-541b8c1c9fe4"
+          ],
+          "failures": [],
+          "pending": [
+            "d6b60e0b-1d65-4e15-b919-beac0641ee41"
+          ],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "62ed9958-f7ad-4b6a-908b-eae683e668b0",
+          "title": "Mocha validations2",
+          "fullFile": "C:\\Users\\way2automation\\Desktop\\mochaframework\\test\\testcase01.js",
+          "file": "\\test\\testcase01.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate through should2",
+              "fullTitle": "Mocha validations2 Validate through should2",
+              "timedOut": false,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "36c09122-bba1-4880-8fad-55267b803b3c",
+              "parentUUID": "62ed9958-f7ad-4b6a-908b-eae683e668b0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate through expect2",
+              "fullTitle": "Mocha validations2 Validate through expect2",
+              "timedOut": false,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "9a27710b-45ad-4594-90a8-0badd3cf3657",
+              "parentUUID": "62ed9958-f7ad-4b6a-908b-eae683e668b0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate through assert2",
+              "fullTitle": "Mocha validations2 Validate through assert2",
+              "timedOut": false,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "bc238a5a-a963-4893-8a4c-43fdb8eb3bbc",
+              "parentUUID": "62ed9958-f7ad-4b6a-908b-eae683e668b0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "36c09122-bba1-4880-8fad-55267b803b3c",
+            "9a27710b-45ad-4594-90a8-0badd3cf3657",
+            "bc238a5a-a963-4893-8a4c-43fdb8eb3bbc"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}
