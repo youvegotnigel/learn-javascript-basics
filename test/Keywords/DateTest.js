@@ -21,3 +21,22 @@ console.log(dt.formatIfDatetime('now mm-30'))
 
 console.log(dt.formatIfDatetime('future+30'))
 console.log(dt.formatIfDatetime('previous+30'))
+
+
+var text = 'name[2]'
+
+if(text.match('.*\\[[\\d.]]')){
+
+    var valueAndIndex = getValueAndIndex(text)
+
+    
+    console.log(valueAndIndex[0])
+    console.log(valueAndIndex[1])
+}
+
+
+function getValueAndIndex(value){
+    var values = value.split('[')
+    values[1] = values[1].replaceAll(']', '')
+    return values
+}
