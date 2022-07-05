@@ -29,17 +29,17 @@ console.log(dt.formatIfDatetime('previous+30'))
 
 var text = 'name[2]'
 
-if(text.match('.*\\[[\\d.]]')){
+if (text.match('.*\\[[\\d.]]')) {
 
     var valueAndIndex = getValueAndIndex(text)
 
-    
+
     console.log(valueAndIndex[0])
     console.log(valueAndIndex[1])
 }
 
 
-function getValueAndIndex(value){
+function getValueAndIndex(value) {
     var values = value.split('[')
     values[1] = values[1].replaceAll(']', '')
     return values
@@ -52,27 +52,27 @@ function getValueAndIndex(value){
 
 
 var data = [
-	[ "Name", "Description", "Product" ],
-	[ "Sam" , "comment", "Resiliense" ]
+    ["Name", "Description", "Product"],
+    ["Sam", "comment", "Resiliense"]
 ];
-   
-   for(var i = 0; i < data.length; i++) {
-        for(var j=0; j<data[i].length; j++){
-            console.log(data[i][j] + " ")
-        }
-        console.log("")
-   }
+
+for (var i = 0; i < data.length; i++) {
+    for (var j = 0; j < data[i].length; j++) {
+        console.log(data[i][j] + " ")
+    }
+    console.log("")
+}
 
 console.log("============================")
 
 const osArray = [
-    [ "Name", "Description", "Product" ],
-	[ "Sam" , "comment", "Resiliense" ]
+    ["Name", "Description", "Product"],
+    ["Sam", "comment", "Resiliense"]
 ];
 const transposedOSArray = osArray[0].map((_, colIndex) => osArray.map(row => row[colIndex]));
 console.log(transposedOSArray.toString());
 
-for(var i = 0; i < transposedOSArray.length; i++) {
+for (var i = 0; i < transposedOSArray.length; i++) {
     console.log("Key   ==> " + transposedOSArray[i][0])
     console.log("Value ==> " + transposedOSArray[i][1])
     console.log("")
@@ -82,94 +82,94 @@ for(var i = 0; i < transposedOSArray.length; i++) {
 
 //===============================================================================================================================
 
-function getValueAndIndex(value){
+function getValueAndIndex(value) {
 
-    if(value.includes('[')){
+    if (value.includes('[')) {
         let values = value.split('[')
         let result = values.map(x => x.replace(']', ''));
-        return result 
-    }else{
+        return result
+    } else {
         return value
     }
-    
+
 }
 
-function switch_option(text){
+function switch_option(text) {
 
     let valueAndIndex = getValueAndIndex(text)
 
-    if(valueAndIndex.length>1){
+    if (valueAndIndex.length > 1) {
         return getValueAndIndex(text)[1]
-    }else{
+    } else {
         return getValueAndIndex(text)[0]
     }
-    
+
 }
 
 
-function test_enter_value(question){
+function test_enter_value(question) {
 
-console.log("Input ::: " + question)
-console.log('==================================')
+    console.log("Input ::: " + question)
+    console.log('==================================')
 
-switch(switch_option(question)){
+    switch (switch_option(question)) {
 
-    case 'suggest':
-        console.log('This is for Suggest tag')
-        if(question.match('.*\\[[\\d.]]')){
-            let valueAndIndex = getValueAndIndex(question)
-            console.log("Field_name : " + valueAndIndex[0])
-            console.log("Index : " + valueAndIndex[2])
-        }else{
-            let valueAndIndex = getValueAndIndex(question)
-            console.log("Field_name : " + valueAndIndex[0])
-            console.log("Index : 1")
-        }
-    break;
+        case 'suggest':
+            console.log('This is for Suggest tag')
+            if (question.match('.*\\[[\\d.]]')) {
+                let valueAndIndex = getValueAndIndex(question)
+                console.log("Field_name : " + valueAndIndex[0])
+                console.log("Index : " + valueAndIndex[2])
+            } else {
+                let valueAndIndex = getValueAndIndex(question)
+                console.log("Field_name : " + valueAndIndex[0])
+                console.log("Index : 1")
+            }
+            break;
 
-    case 'textarea':
-        console.log('This is for Text Area tag')
-        if(question.match('.*\\[[\\d.]]')){
-            let valueAndIndex = getValueAndIndex(question)
-            console.log("Field_name : " + valueAndIndex[0])
-            console.log("Index : " + valueAndIndex[2])
-        }else{
-            let valueAndIndex = getValueAndIndex(question)
-            console.log("Field_name : " + valueAndIndex[0])
-            console.log("Index : 1")
-        }
-    break;
+        case 'textarea':
+            console.log('This is for Text Area tag')
+            if (question.match('.*\\[[\\d.]]')) {
+                let valueAndIndex = getValueAndIndex(question)
+                console.log("Field_name : " + valueAndIndex[0])
+                console.log("Index : " + valueAndIndex[2])
+            } else {
+                let valueAndIndex = getValueAndIndex(question)
+                console.log("Field_name : " + valueAndIndex[0])
+                console.log("Index : 1")
+            }
+            break;
 
-    case 'date':
-        console.log('This is for Date tag')
-        if(question.match('.*\\[[\\d.]]')){
-            let valueAndIndex = getValueAndIndex(question)
-            console.log("Field_name : " + valueAndIndex[0])
-            console.log("Index : " + valueAndIndex[2])
-        }else{
-            let valueAndIndex = getValueAndIndex(question)
-            console.log("Field_name : " + valueAndIndex[0])
-            console.log("Index : 1")
-        }
-    break; 
-            
-    default:
-        console.log('This is for Input tag')
-        if(question.match('.*\\[[\\d.]]')){
-            let valueAndIndex = getValueAndIndex(question)
-            console.log("Field_name : " + valueAndIndex[0])
-            console.log("Index : " + valueAndIndex[1])
-        }else{
-            console.log("Field_name : " + question)
-            console.log("Index : 1")
-        }
-    break;
+        case 'date':
+            console.log('This is for Date tag')
+            if (question.match('.*\\[[\\d.]]')) {
+                let valueAndIndex = getValueAndIndex(question)
+                console.log("Field_name : " + valueAndIndex[0])
+                console.log("Index : " + valueAndIndex[2])
+            } else {
+                let valueAndIndex = getValueAndIndex(question)
+                console.log("Field_name : " + valueAndIndex[0])
+                console.log("Index : 1")
+            }
+            break;
+
+        default:
+            console.log('This is for Input tag')
+            if (question.match('.*\\[[\\d.]]')) {
+                let valueAndIndex = getValueAndIndex(question)
+                console.log("Field_name : " + valueAndIndex[0])
+                console.log("Index : " + valueAndIndex[1])
+            } else {
+                console.log("Field_name : " + question)
+                console.log("Index : 1")
+            }
+            break;
     }
-    console.log('==================================\n') 
+    console.log('==================================\n')
 }
 
 
-const testdata =  [ "Input_Name", "Input_Name[3]", "Textarea_Description[textarea][2]", "Textarea_Description[textarea]", "Suggest_Lead[suggest][2]", "Suggest_Lead[suggest]", "Start_Date[date][3]", "Start_Date[date]"];
+const testdata = ["Input_Name", "Input_Name[3]", "Textarea_Description[textarea][2]", "Textarea_Description[textarea]", "Suggest_Lead[suggest][2]", "Suggest_Lead[suggest]", "Start_Date[date][3]", "Start_Date[date]"];
 
 
 // testdata.forEach(
