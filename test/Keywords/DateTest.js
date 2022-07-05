@@ -2,7 +2,7 @@ var DateTime = require('../Keywords/DateTime.js');
 
 var dt = new DateTime();
 
-/*
+
 console.log(dt.formatIfDatetime('now'))
 console.log(dt.formatIfDatetime('today'))
 console.log(dt.formatIfDatetime('today dd'))
@@ -22,11 +22,11 @@ console.log(dt.formatIfDatetime('now mm-30'))
 
 console.log(dt.formatIfDatetime('future+30'))
 console.log(dt.formatIfDatetime('previous+30'))
-*/
+
 
 //===============================================================================================================================
 
-/*
+
 var text = 'name[2]'
 
 if(text.match('.*\\[[\\d.]]')){
@@ -45,12 +45,12 @@ function getValueAndIndex(value){
     return values
 }
 
-*/
+
 
 //===============================================================================================================================
 
 
-/*
+
 var data = [
 	[ "Name", "Description", "Product" ],
 	[ "Sam" , "comment", "Resiliense" ]
@@ -77,7 +77,7 @@ for(var i = 0; i < transposedOSArray.length; i++) {
     console.log("Value ==> " + transposedOSArray[i][1])
     console.log("")
 }
-*/
+
 
 
 //===============================================================================================================================
