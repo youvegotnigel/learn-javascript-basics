@@ -12,7 +12,7 @@ function DateTime(){
 			    return this.getCurrentDateTime(timeZone, 'yyyy/MM/DD HH:mm:ss')
 
 		    case 'today':
-			    return this.getCurrentDateTime(timeZone, 'yyyy/MM/DD')
+			    return this.getCurrentDateTime(timeZone, 'D MMM yyyy')
 
 		    case 'future':
 			    return this.getFutureDate(1, timeZone, 'yyyy/MM/DD')
@@ -67,7 +67,7 @@ function DateTime(){
 
                 else if(text.match("^previous\\+\\d{1,2}$")){
                     let change = text.split('previous+');
-                    return this.getPreviousDate(parseInt(change[1]), timeZone, 'yyyy/MM/DD');
+                    return this.getPreviousDate(parseInt(change[1]), timeZone, 'D MMM yyyy');
                 }
 
 		return text;

@@ -21,7 +21,7 @@ console.log(dt.formatIfDatetime('now mm+30'))
 console.log(dt.formatIfDatetime('now mm-30'))
 
 console.log(dt.formatIfDatetime('future+30'))
-console.log(dt.formatIfDatetime('previous+30'))
+console.log(dt.formatIfDatetime('previous+20'))
 
 
 //===============================================================================================================================
