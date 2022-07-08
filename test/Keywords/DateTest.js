@@ -185,8 +185,8 @@ test_enter_value("Textarea_Description[textarea][2]")
 //===============================================================================================================================
 
 
-var startDate = moment('01-01-2022', 'DD-MM-YYYY');
-var endDate = moment('01-06-2022', 'DD-MM-YYYY');
+var startDate = moment('August 2014', 'MMMM YYYY');
+var endDate = moment('March 2013', 'MMMM YYYY');
 
 var dayDiff = endDate.diff(startDate, 'days');
 console.log('Days:' + dayDiff);
