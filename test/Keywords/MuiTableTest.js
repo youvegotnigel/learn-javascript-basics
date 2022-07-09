@@ -1,5 +1,6 @@
 //const data = ['3', 'Jaime', 'Lannister', '45', 'Jaime Lannister']
-const data = ['D-4456', 'Soybeans', 'Elijah James', 'lodufbus@ruvetar.bm', '50,163', '85.611 %' ,'Filled']
+//const data = ['D-4456', 'Soybeans', 'Elijah James', 'lodufbus@ruvetar.bm', '50,163', '85.611 %' ,'Filled']
+const data = ['ID', 'First Name']
 
 let updatedData = prepareValue(data)
 
@@ -24,7 +25,7 @@ function prepareRowXpath(cellInfo){
         count = count + 1
     });
 
-    let tag = '(//div[@role=\'grid\'])[2]/descendant-or-self::div[@role=\'row\']/descendant-or-self::div[' + xpath + ']'
+    let tag = '(//div[@role=\'grid\'])[1]/descendant-or-self::div[@role=\'row\']/descendant-or-self::div[' + xpath + ']'
 
     return tag
 }
