@@ -1,13 +1,13 @@
 //const data = ['3', 'Jaime', 'Lannister', '45', 'Jaime Lannister']
 const data = ['D-4456', 'Soybeans', 'Elijah James', 'lodufbus@ruvetar.bm', '50,163', '85.611 %' ,'Filled']
 
-let updatedData = setupText(data)
+let updatedData = prepareValue(data)
 
-let myxpath = setUpXpath(updatedData)
+let myxpath = prepareRowXpath(updatedData)
 
 console.log(myxpath)
 
-function setUpXpath(cellInfo){
+function prepareRowXpath(cellInfo){
 
     var xpath = ''
     var count=1
@@ -30,20 +30,7 @@ function setUpXpath(cellInfo){
 }
 
 
-
-
-
-
-
-function printArray(arguments){
-
- 	for(var i=0; i<arguments.length; i++){
- 		console.log(arguments[i]);
-    }
-}
-
-
-function setupText(arguments) {
+function prepareValue(arguments) {
 
     let a = []
 
